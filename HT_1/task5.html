@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.header {
+		position: relative;
+		width: 100%;
+		height: 100px;
+		border: 1px solid black;
+	}
+	.logo {
+		display: inline-block;
+		width: 100px;
+		height: 30px;
+		background-color: #FF6347;
+		margin: 10px;
+		/*alt with image*/
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		position: relative;
+		display: block;
+	}
+	h2 {
+		display: inline-block;
+		position: absolute;
+	}
+	.menu {
+		padding: 0;
+		left: 0;
+		border: 1px solid black;
+	}
+	li {
+		display: inline-block;
+		list-style: none;
+		font-size: 1.5em;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+	li:hover {
+		background-color: #FF6347;
+	}
+	</style>
+</head>
+<body>
+<div class="header">
+	<div class="logo"></div>
+	<h2>Site</h2>
+	<nav>
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">news</a>
+				<ul>
+					<li><a href="#">first</a></li>
+					<li><a href="#">second</a></li>
+					<li><a href="#">third</a></li>
+					<li><a href="#">fourth</a></li>
+				</ul>
+			</li>
+			<li><a href="#">contacts</a></li>
+			<li><a href="#">about</a></li>
+		</ul>
+	</nav>
+</div>
+</body>
+</html>
