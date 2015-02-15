@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Sticky Footer</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+	* {
+		margin: 0;
+	}
+	html, body {
+		height: 100%;
+	}
+	.site-footer, .site-header {
+		background: orange;
+		height: 40px;
+	}
+	.content {
+		min-height: 100%;
+		margin-bottom: -40px;
+		margin-top: -40px;
+	}
+	.content:after, .content:before {
+		height: 40px;
+		content: "";
+		display: block;
+	}
+	.site-menu {
+		float: left;
+		width: 200px;
+		background: grey;
+	}
+	.site-content {
+		background: pink;
+	}
+	</style>
+</head>
+<body>
+	<header class="site-header">I am the perfect Header</header>
+	<div class="content">
+		<nav class="site-menu">
+			menushka
+		</nav>
+		<main class="site-content">
+			Content
+		</main>
+		<div style="clear:both;"></div>
+	</div>
+	<footer class="site-footer">I am the Sticky Footer</footer>
+</body>
+</html>

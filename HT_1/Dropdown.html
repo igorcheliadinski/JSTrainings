@@ -1,0 +1,90 @@
+ <!doctype html>
+<html>
+<head>
+	<title>Dropdown List</title>
+	<style type="text/css">
+		.container {
+			position: relative;
+			background: orange;
+			height: 200px;
+			border: 1px solid black;
+		}
+		.logo {
+			padding: 10px;
+			float: left;
+			font-size: 2em;
+		}
+		.logo img {
+			width: 110px;
+			height: 30px;
+		}
+		.share {
+			padding: 3px;
+			position: absolute;
+			right: 0;
+		}
+		.share img {
+			width: 30px;
+			height: 30px;
+		}
+		nav {
+			position: absolute;
+			bottom: 0;
+		}
+		nav ul {
+			margin: 0;
+			padding: 0;
+		}
+		nav ul li {
+			float: left;
+			display: list-item;
+			list-style: none;
+		}
+		nav ul li a {
+			display: block;
+			padding: 10px 5px;
+			font-size: 20px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: pink;
+		}
+		nav ul ul {
+			display: none;
+			position: absolute;
+			top: 45px;
+		}
+		nav ul li:hover > ul {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<header class="container">
+	<div class="logo">
+		<img src="http://www.wictphiladelphia.org/wp-content/uploads/2014/07/Trace3_logo_CMYK-408x107.jpg" alt="Logo">
+		<span>Site Name</span>
+	</div>
+	<div class="share">
+		<img src="https://lh3.googleusercontent.com/-GGx_RjZKLes/UzwUIhvya7I/AAAAAAAAPWM/sdv03qRYpu0/w800-h800/google-official.png" alt="g+">
+		<img src="http://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1267px-Twitter_bird_logo_2012.svg.png" alt="twitter">
+		<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="fb">
+	</div>
+	<nav class="menu">
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">news</a>
+				<ul>
+					<li>first topic</li>
+					<li>second topic</li>
+					<li>third topic</li>
+					<li>fourth topic</li>
+				</ul>
+			</li>
+			<li><a href="#">contacts</a></li>
+			<li><a href="#">about</a></li>
+		</ul>
+	</nav>
+</header>
+</body>
+</html>
