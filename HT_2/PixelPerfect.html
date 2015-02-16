@@ -44,15 +44,18 @@
 		width: 925px;
 		height: 100%;
 		margin: 0 auto;
-		margin-top: 47px;
 	}
 	.posts {
 		width: 668px;
 		height: 100%;
 		float: left;
-		margin-top: 5px;
+	}
+	.post {
+		margin-top: 52px;
 	}
 	.description {
+		margin-top: 22px;
+		margin-left: -2px;
 		width: 255px;
 		height: 100%;
 		display: inline-block;
@@ -62,29 +65,34 @@
 		height: 230px;
 	}
 	.theme-header {
-		margin-top: 100px;
-	}
-	.b {
-		border: 1px solid black;
-	}
-	.post-desc {
-		margin-right: 28px;
 		margin-top: 10px;
-		line-height: 0.5em;
+		margin-left: 1px;
 	}
-	.post-text {
+	.theme-divider1 {
+		margin-top: 4px;
 		margin-right: 28px;
-		margin-top: 8px;
 	}
-	.social {
-		position: absolute;
-		height: 30px;
-		width: 30px;
-		margin-top: -5px;
-		float: right;
+	.theme-divider2 {
+		margin-top: 6px;
+		margin-right: 28px;
 	}
-	.second-post {
-		margin-top: 50px;
+	.theme-time {
+		margin-left: 5px;
+		margin-top: 1px;
+	}
+	.theme-text {
+		margin-top: 7px;
+	}
+	.info-post {
+		margin-top: 25px;
+	}
+	.tags {
+		margin-top: 30px;
+	}
+	.loader {
+		text-align: center;
+		margin-top: 56px;
+		margin-right: 12px;
 	}
 	</style>
 </head>
@@ -104,35 +112,40 @@
 		</nav>
 		<main class="content">
 			<div class="posts">
-				<div class="first-post">
+				<div class="post">
 					<img class="theme-img" src="images/first-pic.png">
-					<div class="post-desc">
-						<img src="images/first-header.png">
-						<hr/>
-						<img src="images/time.png">
-						<hr/>
-					</div>
-					<div class="post-text">
-						<img src="images/text.png">
+					<div class="post-description">
+						<img class="theme-header" src="images/first-header.png" />
+						<hr class="theme-divider1" />
+						<img class="theme-time" src="images/time.png">
+						<hr class="theme-divider2" />
+						<img class="theme-text" src="images/text.png">
 					</div>
 				</div>
-				<div class="second-post">
-					<img class="theme-img" src="images/first-pic.png">
-					<div class="post-desc">
-						<img src="images/first-header.png">
-						<hr/>
-						<img src="images/time.png">
-						<hr/>
+				<div class="post">
+					<img class="theme-img" src="images/second-pic.png">
+					<div class="post-description">
+						<img class="theme-header" src="images/second-header.png" />
+						<hr class="theme-divider1" />
+						<img class="theme-time" src="images/time.png">
+						<hr class="theme-divider2" />
+						<img class="theme-text" src="images/text.png">
 					</div>
-					<div class="post-text">
-						<img src="images/text.png">
-					</div>
+				</div>
+				<div class="loader">
+					<img src="images/loder.png" />
 				</div>
 			</div>
 			<div class="description">
-				<img src="images/headerQ.png">
-				<img class="second-post" src="images/headerS.png">
-				<img class="second-post" src="images/tags.png">
+				<div class="info-post">
+					<img src="images/headerQ.png">
+				</div>
+				<div class="info-post">
+					<img src="images/headerS.png">
+				</div>
+				<div class="tags">
+					<img src="images/tags.png">
+				</div>
 			</div>
 		</main>
 	</div>
