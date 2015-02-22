@@ -1,153 +1,110 @@
 <!doctype html>
 <html>
 <head>
-	<title>Pixel Perfect</title>
-	<style type="text/css">
-	html, body {
-		margin: 0;
-	}
-	.container {
-		width: 100%;
-		height: 1297px;
-		text-align: center;
-	}
-	header {
-		display: block;
-		height: 160px;
-		width: 100%;
-	}
-	header img {
-		margin-top: 86px;
-		margin-left: 7px;
-	}
-	nav {
-		width: 100%;
-		height: 55px;
-		background-color: #6b9ad0;
-	}
-	nav ul {
-		margin: 0;
-		padding: 20px;
-		list-style-type: none;
-		vertical-align: middle;
-	}
-	nav ul li {
-		display: inline;
-		margin-left: 100px;
-	}
-	nav ul li a {
-		text-decoration: none;
-		color: #FFF;
-	}
-	main {
-		text-align: left;
-		width: 925px;
-		height: 100%;
-		margin: 0 auto;
-	}
-	.posts {
-		width: 668px;
-		height: 100%;
-		float: left;
-	}
-	.post {
-		margin-top: 52px;
-	}
-	.description {
-		margin-top: 22px;
-		margin-left: -2px;
-		width: 255px;
-		height: 100%;
-		display: inline-block;
-	}
-	.theme-img {
-		width: 640px;
-		height: 230px;
-	}
-	.theme-header {
-		margin-top: 10px;
-		margin-left: 1px;
-	}
-	.theme-divider1 {
-		margin-top: 4px;
-		margin-right: 28px;
-	}
-	.theme-divider2 {
-		margin-top: 6px;
-		margin-right: 28px;
-	}
-	.theme-time {
-		margin-left: 5px;
-		margin-top: 1px;
-	}
-	.theme-text {
-		margin-top: 7px;
-	}
-	.info-post {
-		margin-top: 25px;
-	}
-	.tags {
-		margin-top: 30px;
-	}
-	.loader {
-		text-align: center;
-		margin-top: 56px;
-		margin-right: 12px;
-	}
-	</style>
+	<title>Raccoon Blog</title>
+	<link rel="stylesheet" media="screen and (min-width: 960px)" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" media="screen and (min-width: 401px) and (max-width: 959px)" type="text/css" href="css/tablet.css">
+	<link rel="stylesheet" media="screen and (max-width: 400px)" type="text/css" href="css/mobile.css">
 </head>
 <body>
-	<div class="container">
-		<header>
-			<img src="images/logo.png" alt="logo" />
-		</header>
-		<nav>
-			<ul>
-				<li><a href="#">JAVASCRIPT</a></li>
-				<li><a href="#">CSS</a></li>
-				<li><a href="#">LATEST</a></li>
-				<li><a href="#">HTML</a></li>
-				<li><a href="#">DESIGN</a></li>
-			</ul>
-		</nav>
-		<main class="content">
-			<div class="posts">
-				<div class="post">
-					<img class="theme-img" src="images/first-pic.png">
-					<div class="post-description">
-						<img class="theme-header" src="images/first-header.png" />
-						<hr class="theme-divider1" />
-						<img class="theme-time" src="images/time.png">
-						<hr class="theme-divider2" />
-						<img class="theme-text" src="images/text.png">
-					</div>
-				</div>
-				<div class="post">
-					<img class="theme-img" src="images/second-pic.png">
-					<div class="post-description">
-						<img class="theme-header" src="images/second-header.png" />
-						<hr class="theme-divider1" />
-						<img class="theme-time" src="images/time.png">
-						<hr class="theme-divider2" />
-						<img class="theme-text" src="images/text.png">
-					</div>
-				</div>
-				<div class="loader">
-					<img src="images/loder.png" />
-				</div>
+<header>
+	<img src="images/logo.png" alt="Logo" />
+	<nav>
+		<ul>
+			<li><a href="#">javascript</a></li><!--
+			--><li><a href="#">css</a></li><!--
+			--><li><a href="#">latest</a></li><!--
+			--><li><a href="#">html</a></li><!--
+			--><li><a href="#">design</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<div class="articles">
+		<article>
+			<div class="header-img">
+				<img src="images/first-pic.png" alt="First article" />
 			</div>
-			<div class="description">
-				<div class="info-post">
-					<img src="images/headerQ.png">
-				</div>
-				<div class="info-post">
-					<img src="images/headerS.png">
-				</div>
-				<div class="tags">
-					<img src="images/tags.png">
-				</div>
+			<h3>Blogotitle of blogopost about blogoflowers</h3>
+			<hr class="first-line" />
+			<time>
+				<img src="images/clock.png" alt="clock" />
+				<span>22:58 Jan 01, 2014</span>
+			</time>
+			<div class="author">
+				<img src="images/author.png" alt="author" />
+				<span>by E. Hyperraccoon</span>
 			</div>
-		</main>
+			<div class="socials">
+				<div class="facebook"><img src="images/facebook.png">16</div>
+				<div class="google-plus"><img src="images/google-plus.png">7</div>
+				<div class="twitter"><img src="images/twitter.png">15</div>
+				<div class="vk"><img src="images/Vk.png">16</div>
+				<div class="odnoklassniki">1</div>
+			</div>
+			<hr class="second-line" />
+			<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+		</article>
+		<article>
+			<div class="header-img">
+				<img  src="images/second-pic.png" alt="Second article" />
+			</div>
+			<h3>Blogotitle about colorful shit</h3>
+			<hr class="first-line" />
+			<time>
+				<img src="images/clock.png" alt="clock" />
+				<span>22:50 Jan 01, 2014</span>
+			</time>
+			<div class="author">
+				<img src="images/author.png" alt="author" />
+				<span>by E. Hyperraccoon</span>
+			</div>
+			<div class="socials">
+				<div class="facebook"><img src="images/facebook.png">16</div>
+				<div class="google-plus"><img src="images/google-plus.png">7</div>
+				<div class="twitter"><img src="images/twitter.png">15</div>
+				<div class="vk"><img src="images/Vk.png">16</div>
+				<div class="odnoklassniki">1</div>
+			</div>
+			<hr class="second-line" />
+			<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+		</article>
+		<footer>
+			<img src="images/loader.gif" alt="Loader..." />
+		</footer>
 	</div>
+	<summary>
+		<article class="question">
+			<header>
+				<div>?</div>
+			</header>
+			<section>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</section>
+		</article>
+		<article class="answer">
+			<header>
+				<div>!</div>
+			</header>
+			<section>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			</section>
+		</article>
+		<aside>
+			<div class="arrow">Raccoon</div>
+			<div class="arrow">Raccoon</div>
+			<div class="arrow">Coon</div>
+			<div class="arrow">Dog</div>
+			<div class="arrow">Cat</div>
+			<div class="arrow">Developer</div>
+			<div class="arrow">Raccoon</div>
+			<div class="arrow">Raccoon</div>
+			<div class="arrow">Coon</div>
+			<div class="arrow">Dog</div>
+			<div class="arrow">Cat</div>
+			<div class="arrow">Developer</div>
+		</aside>
+	</summary>
+</main>
 </body>
 </html>
