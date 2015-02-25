@@ -2,7 +2,7 @@
 		box-sizing: border-box;
 	}
 	body {
-		margin: 85px 0 0 0;
+		margin: 30px 0 0 0;
 		width: 100%;
 	}
 	header img {
@@ -15,9 +15,6 @@
 		height: 54px;
 		text-align: center;
 	}
-	nav ul {
-		line-height: 54px;
-	}
 	nav ul li {
 		position: relative;
 		text-transform: uppercase;
@@ -25,9 +22,9 @@
 	}
 	nav ul li a {
 		display: inherit;
+		font-size: 13px;
 		line-height: 54px;
 		width: 100px;
-		font-size: 13px;
 		color: white;
 		font-family: sans-serif;
 		text-decoration: none;
@@ -43,30 +40,35 @@
 		border-left: 10px solid transparent;
 		border-right: 10px solid transparent;
 		border-top: 10px solid #2f79cd;
-		left: 65px;
+		left: 50%;
+		margin-left: -10px;
 		position: absolute;
 	}
 	main {
-		width: 100%;
 		position: relative;
+		display: block;
+		height: 800px;
+		width: 100%;
+		margin: 0 auto;
 	}
 	.articles {
-		margin-top: 106px;
+		margin-top: 50px;
 		width: 100%;
+		float: left;
 		font-family: sans-serif;
 	}
 	.articles article {
+		padding: 0 60px;
 		position: relative;
-		margin: 53px auto;
-		width: 640px;
+		margin-top: 53px;
 	}
 	.header-img {
 		display: block;
-		width: 640px;
 		height: 230px;
 		overflow: hidden;
 	}
 	.header-img img {
+		width: 100%;
 		margin-top: -96px;
 	}
 	.articles article h3 {
@@ -75,11 +77,6 @@
 	}
 	.first-line {
 		margin-top: -12px;
-	}
-	summary {
-		float: right;
-		width: 255px;
-		margin: 48px 2px 0 0;
 	}
 	time {
 		display: inline-block;
@@ -100,10 +97,10 @@
 	.socials {
 		position: absolute;
 		top: 0;
-		right: -55px;
-		display: block;
+		right: 0;
 	}
 	.socials div {
+		margin-bottom: 5px;
 		height: 100%;
 		border-radius: 3px;
 		min-width: 42px;
@@ -112,12 +109,15 @@
 		text-align: right;
 		padding-right: 7px;
 		font-size: 14px;
-		margin-bottom: 10px;
 	}
 	.socials img {
 		float: left;
 		height: 24px;
 		width: 24px;
+	}
+	.socials img:after {
+		content: "";
+		clear: both;
 	}
 	.socials .facebook {
 		background: #3c5a98;
@@ -147,49 +147,59 @@
 		margin-top: 53px;
 		margin-bottom: 53px;
 	}
-	footer img {
+	footer img{
 		display: block;
 		margin: 0 auto;
 		width: 80px;
 		height: 80px;
 	}
-	.question header div {
-		position: absolute;
-		left: 0;
-		width: 54px;
-		height: 54px;
-		top: -160px;
-		background: #b6cce5;
-		line-height: 60px;
-		text-align: center;
-		color: white;
-		font-family: sans-serif;
-		font-size: 35px;
+	summary {
+		float: right;
+		width: 255px;
+		margin: 48px 2px 0 0;
 	}
-	.answer header div {
+	summary .question header div {
 		position: absolute;
-		top: -160px;
-		right: 0;
-		width: 54px;
-		height: 54px;
-		background: #b6cce5;
-		line-height: 60px;
-		text-align: center;
+		width: 50px;
+		height: 50px;
+		top: -52px;
+		left: 2px;
+		padding: 10px;
+		background: #a7caf1;
 		color: white;
+		vertical-align: middle;
+		text-align: center;
 		font-family: sans-serif;
-		font-size: 35px;
+		font-size: 28px;
+		cursor: pointer;
 	}
-	.answer header {
-		display: none;
+	summary .answer header div {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top: -52px;
+		right: 2px;
+		padding: 10px;
+		background: #a7caf1;
+		color: white;
+		vertical-align: middle;
+		text-align: center;
+		font-family: sans-serif;
+		font-size: 28px;
+		cursor: pointer;
 	}
 	summary section {
 		display: none;
+		font-size: 13px;
+		color: #a2aab2;
+		padding-top: 20px;
+		line-height: 140%;
 	}
 	aside {
 		position: absolute;
-		left: 54px;
-		right: 54px;
-		top: -90px;
+		top: 0;
+		left: 0;
+		padding: 20px 60px;
 		font-family: sans-serif;
 		font-size: 12px;
 		color: white;
