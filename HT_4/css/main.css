@@ -14,9 +14,11 @@
 		background: #6b9ad0;
 		height: 54px;
 		text-align: center;
+		margin: 16px 0;
 	}
 	nav ul {
 		line-height: 54px;
+		margin: 0;
 	}
 	nav ul li {
 		position: relative;
