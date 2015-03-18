@@ -22,4 +22,6 @@ div input[type="text"] {
 div input[type="button"] {
 	margin-top: 10px;
 	width: 100px;
+	display: inline-block;
+	line-height: 50px;
 }
