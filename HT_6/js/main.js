@@ -42,6 +42,7 @@ function change() {
 			splittedText = text.split(' '),
 			word,
 			words,
+			tempArray,
 			i;
 
 	stringOutput.value = text.split(' ').map(function (value, index, arr) {
@@ -57,7 +58,10 @@ function change() {
 					words.push(word);
 					word = '';
 				} else {
-					word += value[i];
+					tempArray = word.split('');
+					tempArray.push(value[i]);
+					word = tempArray.join('');
+					// word += value[i];
 				}
 			}
 			return words.join('');
